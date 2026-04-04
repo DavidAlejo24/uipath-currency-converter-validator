@@ -1,0 +1,6 @@
+{
+  "Name": "MyFirstAutomation",
+  "ProjectType": "Process",
+  "Description": "Automatización guiada por la misma herramieta",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "MyFirstAutomation",
+  "projectId": "be988c53-2bac-4eb8-9ed9-27a580050aee",
+  "description": "Automatización guiada por la misma herramieta",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.4.1]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.8.0-preview]",
+    "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.WorkflowEvents.Activities": "[3.35.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.190.0",
+  "projectVersion": "1.0.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "5281b6f5-e143-440a-9c39-9b3a473b2e49",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
