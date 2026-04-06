@@ -1,6 +1,6 @@
 {
-  "Name": "MyFirstAutomation",
+  "Name": "CargarTransacciones",
   "ProjectType": "Process",
-  "Description": "Automatización guiada por la misma herramieta",
+  "Description": "descarga de un archivo de excel de storage bucket, valida las filas para ver que no haya celdas vacias y las filas validas las almancena en un queues en la cloud de uipath",
   "MainFile": "Main.xaml"
 }

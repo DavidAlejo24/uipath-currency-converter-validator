@@ -1,7 +1,7 @@
 {
-  "name": "MyFirstAutomation",
+  "name": "CargarTransacciones",
   "projectId": "be988c53-2bac-4eb8-9ed9-27a580050aee",
-  "description": "Automatización guiada por la misma herramieta",
+  "description": "descarga de un archivo de excel de storage bucket, valida las filas para ver que no haya celdas vacias y las filas validas las almancena en un queues en la cloud de uipath",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.4.1]",
