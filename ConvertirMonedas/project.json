@@ -1,0 +1,62 @@
+{
+  "name": "ConvertirMonedas",
+  "projectId": "58a33214-97cc-4bd8-8866-655617cbb1d3",
+  "description": "Leer datos de Queues y validarlos con www.exchange-rates.org/converter. Generar un nuevo reporte final en excel y mandarlo por correo electronico con una plantilla que se encuentra en la cloud",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.4.1]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.8.0-preview]",
+    "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.28]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.190.0",
+  "projectVersion": "1.0.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "a0d018b6-8a73-4463-aceb-02a6a17552f8",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {
+    "iconUrl": ".package/63647734-money-exchange-isolated-icon-on-white-background-dollar-and-euro-conversion-finance-icon-bank.jpg"
+  },
+  "targetFramework": "Windows"
+}

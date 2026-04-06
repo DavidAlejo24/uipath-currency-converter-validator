@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IIuySEL6j0SgMXbbyY6o6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exchange-rates.org/converter" DesignTimeRectangle="304, 239, 59, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='to-rate' tag='SPAN' /&gt;" Guid="c917427a-6b35-47dc-af45-6bb3d33b0571" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f823f13438129415e87ae8e6b056d36e.jpg" xmlns="">0sn9b3C2ehUmn-T4rtFImtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

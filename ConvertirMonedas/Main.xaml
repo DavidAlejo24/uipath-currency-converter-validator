@@ -1,0 +1,528 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Queues</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Platform</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Api</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="552,6351" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="StrUrlExchange">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://www.exchange-rates.org/converter</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="itemsList" />
+      <Variable x:TypeArguments="x:String" Name="cuerpoCorreoRaw" />
+      <Variable x:TypeArguments="x:String" Name="cuerpoCorreoFinal" />
+      <Variable x:TypeArguments="x:String" Name="StrCorreoUsuarios">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">biparede@pichincha.com</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="resultado">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">SendMailConnections_1</x:String>
+            <x:String x:Key="SourcePropertyName">Result</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Obtener elementos de la cola" FilterStrategy="Equals" FolderPath="davidcruz4g@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="524,176" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="All" QueueName="ConversionesTransacciones" Result="[itemsList]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Free Currency Converter  Live Currency" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,5422" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="522,5219" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="CurrentIndex" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="ui:QueueItem" CurrentIndex="[CurrentIndex]" DisplayName="For Each currentQueueItem" sap:VirtualizedContainerService.HintSize="488,5159" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[itemsList]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="ui:QueueItem">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:QueueItem" Name="currentQueueItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="486,5037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Double" Name="diferencia" />
+                      <Variable x:TypeArguments="x:String" Name="valorOrigen" />
+                      <Variable x:TypeArguments="x:String" Name="monedaOrigen" />
+                      <Variable x:TypeArguments="x:String" Name="monedaDestino" />
+                      <Variable x:TypeArguments="x:String" Name="busquedaMonedaOrigen" />
+                      <Variable x:TypeArguments="x:String" Name="busquedaMonedaDestino" />
+                      <Variable x:TypeArguments="x:String" Name="conversionExtraida" />
+                      <Variable x:TypeArguments="x:Double" Name="conversionExtraidaFiltrada" />
+                      <Variable x:TypeArguments="x:Double" Name="valorDestino" />
+                      <Variable x:TypeArguments="sd2:DataTable" Name="dt_ResultadoFila" />
+                      <Variable x:TypeArguments="x:String" Name="validacionConversion" />
+                      <Variable x:TypeArguments="x:String" Name="observacion" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Variable &quot;Amount&quot;" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[valorOrigen]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("valorOrigen").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Variable &quot;From&quot;" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[monedaOrigen]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("monedaOrigen").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Variable &quot;To&quot;" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[monedaDestino]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("monedaDestino").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Variable busqueda de MonedaOrigen &quot;From&quot;" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[busquedaMonedaOrigen]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["*" + monedaOrigen +"*"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Variable busqueda de MonedaOrigen &quot;From&quot;" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[busquedaMonedaDestino]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["*(" + monedaDestino + ")*"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="0.3" DisplayName="Escribir en 'Amount'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,318" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Text="[valorOrigen]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="oxCosrDUkUqZVthFYaqgug" DesignTimeRectangle="68, 511, 110, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtAmount' tag='INPUT' type='text' class='amount' aaname=' Amount: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c0099007-d6a5-41c0-b613-1fded1d6b229" InformativeScreenshot="7869f83ff54d54e8aa43b4f07d5dc6b0.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/4sUouiWJjk6pCMZG2uztfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="68, 484, 52, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='block nowrap' aaname=' Amount: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount:' /&gt;" Guid="95060c97-510b-417d-bf87-946f43e573ea" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions ExpectedText="[currentQueueItem.SpecificContent(&quot;valorOrigen&quot;).ToString]" Mode="TextChanges">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="oxCosrDUkUqZVthFYaqgug" DesignTimeRectangle="68, 511, 110, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtAmount' tag='INPUT' type='text' class='amount' aaname=' Amount: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c0099007-d6a5-41c0-b613-1fded1d6b229" InformativeScreenshot="7869f83ff54d54e8aa43b4f07d5dc6b0.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/4sUouiWJjk6pCMZG2uztfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="68, 484, 52, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='block nowrap' aaname=' Amount: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount:' /&gt;" Guid="95060c97-510b-417d-bf87-946f43e573ea" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionTypeIntoOptions.Target>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="1" DelayBefore="1" DisplayName="Escribir en 'From'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Text="[monedaOrigen]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" CVScreenId="bc1fbd75-cc1c-4794-9c66-387822816d2b" ContentHash="wvRpSnW3BUivk4bus9TRpw" CvTextArea="239, 628, 159, 20" CvTextArgument="Moroccan Dirham (MAD)" CvType="Text" DesignTimeRectangle="190, 611, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtFrom' tag='INPUT' type='text' class='currency_select from ui-autocomplete-input' aaname=' From: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="04d16e8f-1c7c-4f22-81df-9139e6248595" InformativeScreenshot="34c90076e78ce3aa647d475b552b391f.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/TimT1kbxN0OOxtu9G8Hbnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="190, 584, 35, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='block' tag='LABEL' type='' aaname=' From: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='From:' /&gt;" Guid="dd183837-eb0c-4e62-a9c0-5e50ad11504f" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado 'From'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,401" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5">
+                      <uix:NKeyboardShortcuts.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" CVScreenId="bc1fbd75-cc1c-4794-9c66-387822816d2b" ContentHash="wvRpSnW3BUivk4bus9TRpw" CvTextArea="239, 628, 159, 20" CvTextArgument="Moroccan Dirham (MAD)" CvType="Text" DesignTimeRectangle="190, 611, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtFrom' tag='INPUT' type='text' class='currency_select from ui-autocomplete-input' aaname=' From: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="04d16e8f-1c7c-4f22-81df-9139e6248595" InformativeScreenshot="34c90076e78ce3aa647d475b552b391f.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/TimT1kbxN0OOxtu9G8Hbnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="190, 584, 35, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='block' tag='LABEL' type='' aaname=' From: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='From:' /&gt;" Guid="dd183837-eb0c-4e62-a9c0-5e50ad11504f" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NKeyboardShortcuts.Target>
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions Mode="TextChanges">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" CVScreenId="bc1fbd75-cc1c-4794-9c66-387822816d2b" ContentHash="wvRpSnW3BUivk4bus9TRpw" CvTextArea="239, 628, 159, 20" CvTextArgument="Moroccan Dirham (MAD)" CvType="Text" DesignTimeRectangle="190, 611, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtFrom' tag='INPUT' type='text' class='currency_select from ui-autocomplete-input' aaname=' From: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="04d16e8f-1c7c-4f22-81df-9139e6248595" InformativeScreenshot="34c90076e78ce3aa647d475b552b391f.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/TimT1kbxN0OOxtu9G8Hbnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="190, 584, 35, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='block' tag='LABEL' type='' aaname=' From: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='From:' /&gt;" Guid="dd183837-eb0c-4e62-a9c0-5e50ad11504f" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="0.5" DelayBefore="1" DisplayName="Escribir en 'To'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Text="[monedaDestino]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="t3WMG7xcCUmomGci6QEbLw" DesignTimeRectangle="524, 167, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtTo' tag='INPUT' type='text' class='currency_select to ui-autocomplete-input' aaname=' To: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f12d4e80-8278-46de-a436-67cf85a441b0" InformativeScreenshot="60f39e7a2b74404a0746f45fe205be37.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/0KhxCQUz2kqfYm7g1TUtfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="524, 140, 19, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' To: ' class='block' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='To:' /&gt;" Guid="66e07e44-9588-489f-ab83-de1661207975" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DisplayName="Atajos del teclado 'To'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,401" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5">
+                      <uix:NKeyboardShortcuts.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="t3WMG7xcCUmomGci6QEbLw" DesignTimeRectangle="524, 167, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtTo' tag='INPUT' type='text' class='currency_select to ui-autocomplete-input' aaname=' To: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f12d4e80-8278-46de-a436-67cf85a441b0" InformativeScreenshot="60f39e7a2b74404a0746f45fe205be37.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/0KhxCQUz2kqfYm7g1TUtfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="524, 140, 19, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' To: ' class='block' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='To:' /&gt;" Guid="66e07e44-9588-489f-ab83-de1661207975" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NKeyboardShortcuts.Target>
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions Mode="TextChanges">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="t3WMG7xcCUmomGci6QEbLw" DesignTimeRectangle="524, 167, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtTo' tag='INPUT' type='text' class='currency_select to ui-autocomplete-input' aaname=' To: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f12d4e80-8278-46de-a436-67cf85a441b0" InformativeScreenshot="60f39e7a2b74404a0746f45fe205be37.jpg" IsResponsive="True" Reference="8JVRsYbaME-LpUmQl7lifQ/0KhxCQUz2kqfYm7g1TUtfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="524, 140, 19, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' To: ' class='block' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='To:' /&gt;" Guid="66e07e44-9588-489f-ab83-de1661207975" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                    <uix:NGetText DelayAfter="1" DelayBefore="2" DisplayName="Obtener texto 'conversionExtraida'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="668f4b16-293c-48f9-ac9c-3a5eb425c9de" ScrapingMethod="TextAttribute" TextString="[conversionExtraida]" Version="V5">
+                      <uix:NGetText.ScrapingOptions>
+                        <InArgument x:TypeArguments="uix:NScrapingOptions" />
+                      </uix:NGetText.ScrapingOptions>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="exchange-rates.org/converter" ContentHash="IIuySEL6j0SgMXbbyY6o6g" DesignTimeRectangle="304, 239, 59, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='to-rate' tag='SPAN' /&gt;" Guid="c917427a-6b35-47dc-af45-6bb3d33b0571" InformativeScreenshot="f823f13438129415e87ae8e6b056d36e.jpg" Reference="8JVRsYbaME-LpUmQl7lifQ/x6Qo6guPNEOvKCvP4QgKZg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Double">[conversionExtraidaFiltrada]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Double">[Double.Parse(conversionExtraida.Replace(",", "").Trim, System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Double">[valorDestino]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Double">[Double.Parse(currentQueueItem.SpecificContent("valorDestino").ToString.Replace(",", "").Trim, System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Double">[diferencia]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Double">[valorDestino - conversionExtraidaFiltrada]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[Math.Abs(diferencia) &lt;= 1]" sap:VirtualizedContainerService.HintSize="452,1291" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,576" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Validación exitosa. ID Transacción: &quot; + currentQueueItem.SpecificContent(&quot;idTransaccion&quot;).ToString + &quot; | Diferencia: &quot; + diferencia.ToString + &quot;| valorDestino &quot; + valorDestino.ToString +&quot; - valorExtraidoFiltrado &quot; + conversionExtraidaFiltrada.ToString +&quot; (valorExtraido) &quot; + conversionExtraida +&quot; | monedaOrigen: &quot; + monedaOrigen + &quot;monedaDestino: &quot;+ monedaDestino]" />
+                          <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[validacionConversion]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["Correcto"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_13">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[observacion]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,576" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Validación fallida. ID Transacción: &quot; + currentQueueItem.SpecificContent(&quot;idTransaccion&quot;).ToString + &quot; | Diferencia: &quot; + diferencia.ToString + &quot;| valorDestino &quot; + valorDestino.ToString + &quot; - valorExtraidoFiltrado &quot; + conversionExtraidaFiltrada.ToString +&quot; (valorExtraido) &quot; + conversionExtraida +&quot; | monedaOrigen: &quot; + monedaOrigen + &quot;monedaDestino: &quot;+ monedaDestino]" />
+                          <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[validacionConversion]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">Fallido</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_14">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[observacion]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["Validación fallida. Sale del rango -1/1 " + " | Diferencia: " + diferencia.ToString + "| valorDestino " + valorDestino.ToString + " - valorExtraidoFiltrado " + conversionExtraidaFiltrada.ToString +" | monedaOrigen: " + monedaOrigen + "monedaDestino: "+ monedaDestino]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:BuildDataTable DataTable="[dt_ResultadoFila]" DisplayName="Crear tabla de datos" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;idTransaccion&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;monedaOrigen&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;valorOrigen&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;monedaDestino&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;valorDestino&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;valorExtraido&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;diferencia&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;validacion&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;observacion&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentQueueItem.SpecificContent(&quot;idTransaccion&quot;).ToString, monedaOrigen.ToString, valorOrigen.ToString, monedaDestino.ToString, valorDestino.ToString, conversionExtraidaFiltrada.ToString, diferencia.ToString, validacionConversion.toString, observacion.toString}]" DataTable="[dt_ResultadoFila]" DisplayName="Añadir fila de datos" sap:VirtualizedContainerService.HintSize="452,221" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:AppendRange DataTable="[dt_ResultadoFila]" DisplayName="Anexar libro de intervalo" sap:VirtualizedContainerService.HintSize="452,218" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Hoja1" WorkbookPath="reporteFinal.xlsx" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1289, 784" BrowserType="Chrome" ContentHash="BK3LEArzikCvue-RQMFOjg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALUSURBVDhPVZFJT1NhFIb7A9zowqiIOOAPcO0IiIKsNKJxIYEFo5EEGWRqGKKhUFra24mWCmKQ2TLGyoJKkCq9gCDDZZShRQRBAinE5ev5vmqVxZPv3pN7nnve88nO5RSDceZpIY6n53NO0/PZ7CJej3yhQlSNGreq1bhpLcc1swJhljL+zuCCYOJUVgHSGm1Q9ThwoaiMJAcFN6xKTsn7bmS/bUaopfSf4GhaLtKb2yEuraCgqQ2XFBoEZRX6BezD6DoDpPVvcCxIUJDkSmWJT8BGPZKaDdvIF/TPLeBuhQknMuQUwReNCS6bnqNLGsOGdxf1o4NIttUivEr5vyAHL50u2CckRKsMCFEKCMws8AsuGp+hd17C5p4XLeMi7rzS8Wa/4DBN0D46DtfSMhod/eibncehxCd+QQQR22SFZ2cbDWODyO95gxBaJhcEZRXhZEYBYqrqkFrXisymDkRpzDiWJqdFFiPC6ttBmLkUt2sFNFAEdf87XDWVcLksOLcY54kAyh2QnscJzJSD1RmR1MyvkQinWwi1KHC9qsxfkwmSDgztlA6aKYGjJXSsTrWUoUokiZVIppOR4DIi3mWgupm/y4yzepgItVSOvnUHxK1B6GcEXjPO6PFohD4cNiOFn5VIH6uBfKIeiUNGxIkCZPppap5Sw75qh2fPg+GtYbQut9JUWppCjxRqTmJ/p+YHH1UY3l6AtOvBPacSLW6nT1AxVYEOdwfW9tdgW7ZRDA0MVGcC1hjzSYv7znLkjb/Gj187cO9vQvw5jyGCC1hedlrn6KpoioGNAZRPKvluHo9Y4NycQe/6OL56v6Nsug2NKx/QuSqSWHMwwqJ3kQu6Pd28ppxUY3rXDQc129c+Y3JnBQ+pKXHIhATRSNFMPgFDOaFEp7sTXe4u/ixIAqrnqtBMOWMHdYSAOILt5H/8AhZDS4tj/I3EiBcNviX+ubaDAjN+A43oxzqYbWLJAAAAAElFTkSuQmCC" InformativeScreenshot="64960877b594220a4c6dd8a220530751.jpg" Reference="8JVRsYbaME-LpUmQl7lifQ/Lz3nfzrGA0mkhUKEHgFGow" Selector="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" Url="[StrUrlExchange]" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:ReadTextFile File="{x:Null}" Content="[cuerpoCorreoRaw]" DisplayName="Leer archivo de texto" FileName="PlantillaCorreo.html" sap:VirtualizedContainerService.HintSize="524,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="524,175" sap2010:WorkflowViewState.IdRef="Assign_15">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[cuerpoCorreoFinal]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[cuerpoCorreoRaw.Replace("[FECHA]", Now.ToString("dd/MM/yyyy HH:mm"))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" SensitivityLabelId="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" Attachments="[{ LocalResource.FromPath(&quot;reporteFinal.xlsx&quot;) }]" AuthScopesInvalid="False" Body="[cuerpoCorreoFinal]" ConnectionId="3625b317-cb46-460e-8ec1-d278604aab98" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="524,431" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" IsDeliveryReceiptRequested="False" IsReadReceiptRequested="False" ReplyTo="[{StrCorreoUsuarios}]" Result="[resultado]" SaveAsDraft="False" Subject="[&quot;Reporte de Conversiones - David Cruz - &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[{StrCorreoUsuarios}]" UseConnectionService="True" UseSharedMailbox="False">
+      <umam:SendMailConnections.AttachmentsBackup>
+        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+              <x:Null />
+            </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="Builder" Capacity="1">
+              <x:Null />
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umam:SendMailConnections.AttachmentsBackup>
+      <umam:SendMailConnections.InputTypeBackup>
+        <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umame:BodyInputType, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umam:SendMailConnections.InputTypeBackup>
+      <umam:SendMailConnections.MailboxArg>
+        <umamm:MailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
+          <umamm:MailboxArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID0" StoredValue="NoMailbox">
+              <usau:BackupSlot.BackupValues>
+                <scg:List x:TypeArguments="x:Object" x:Key="NoMailbox" Capacity="1">
+                  <x:Null />
+                </scg:List>
+                <scg:List x:TypeArguments="x:Object" x:Key="UseMailbox" Capacity="1">
+                  <x:Null />
+                </scg:List>
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </umamm:MailboxArgument.Backup>
+        </umamm:MailboxArgument>
+      </umam:SendMailConnections.MailboxArg>
+    </umam:SendMailConnections>
+  </Sequence>
+</Activity>

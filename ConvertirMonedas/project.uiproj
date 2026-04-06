@@ -1,0 +1,6 @@
+{
+  "Name": "ConvertirMonedas",
+  "ProjectType": "Process",
+  "Description": "Leer datos de Queues y validarlos con www.exchange-rates.org/converter. Generar un nuevo reporte final en excel y mandarlo por correo electronico con una plantilla que se encuentra en la cloud",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wvRpSnW3BUivk4bus9TRpw" Reference="8JVRsYbaME-LpUmQl7lifQ/TimT1kbxN0OOxtu9G8Hbnw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exchange-rates.org/converter" CVScreenId="bc1fbd75-cc1c-4794-9c66-387822816d2b" CvTextArea="239, 628, 159, 20" CvTextArgument="Moroccan Dirham (MAD)" CvType="Text" DesignTimeRectangle="190, 611, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtFrom' tag='INPUT' type='text' class='currency_select from ui-autocomplete-input' aaname=' From: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="04d16e8f-1c7c-4f22-81df-9139e6248595" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="190, 584, 35, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='block' tag='LABEL' type='' aaname=' From: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='From:' /&gt;" Guid="dd183837-eb0c-4e62-a9c0-5e50ad11504f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="34c90076e78ce3aa647d475b552b391f.jpg" xmlns="">0BZvs4QgCCU2Hbc7aWbV6RA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

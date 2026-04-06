@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Seleccionar monedaOrigen",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "_5CwPyMhgk2sOB7Zl7Oglw",
+  "Reference": "8JVRsYbaME-LpUmQl7lifQ/_5CwPyMhgk2sOB7Zl7Oglw",
+  "ParentRef": "8JVRsYbaME-LpUmQl7lifQ/Lz3nfzrGA0mkhUKEHgFGow",
+  "Created": "2026-04-04T19:33:27.6748418Z",
+  "Updated": "2026-04-04T19:33:27.6748418Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

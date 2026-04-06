@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Free Currency Converter  Live Currency",
+  "Type": "Screen",
+  "Id": "Lz3nfzrGA0mkhUKEHgFGow",
+  "Reference": "8JVRsYbaME-LpUmQl7lifQ/Lz3nfzrGA0mkhUKEHgFGow",
+  "ParentRef": "8JVRsYbaME-LpUmQl7lifQ/e-m7mUsZQUm5eL93N1uF1Q",
+  "Created": "2026-04-04T18:45:28.595954Z",
+  "Updated": "2026-04-04T18:45:28.595954Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

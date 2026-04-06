@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1u3oyBVd90itm6xHUhSQyw" Reference="8JVRsYbaME-LpUmQl7lifQ/_5CwPyMhgk2sOB7Zl7Oglw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exchange-rates.org/converter" DesignTimeRectangle="190, 375, 292, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[monedaOrigen]" FuzzySelectorArgument="&lt;webctrl id='txtFrom' tag='INPUT' type='text' class='currency_select from ui-autocomplete-input' aaname=' From: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c684cf1e-af0f-4bdd-a302-dbe81d3e5814" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Currency Converter | Live Currency Exchange Rates Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="190, 348, 35, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='block' matching:class='fuzzy' fuzzylevel:class='0.0' tag='LABEL' type='' aaname=' From: ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='From:' /&gt;" Guid="f8129a3f-560b-4dbb-9e24-b1da3ea36bd3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f2eb16fc8bae84fa963c8a0d5899a7a4.jpg" xmlns="">0R3zz7AT_PUy3SEIbnMvuFw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="monedaOrigen" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -124,19 +124,11 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="641,2209" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="640,2209" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtConversiones" />
-      <Variable x:TypeArguments="x:String" Name="LoadFileDirectory">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\LoadData\BaseCambios.xlsx</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="LoadDataDirectoryPath">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\LoadData\</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="C:\LoadData\BaseCambios.xlsx" Name="LoadFileDirectory" />
+      <Variable x:TypeArguments="x:String" Default="C:\LoadData\" Name="LoadDataDirectoryPath" />
       <Variable x:TypeArguments="x:Boolean" Name="ExisteRuta" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -228,7 +220,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Añadir elemento de la cola" FolderPath="davidcruz4g@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" Priority="Normal" QueueType="ConversionMoneda2">
+                                  <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Añadir elemento de la cola" FolderPath="davidcruz4g@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" Priority="Normal" QueueType="ConversionesTransacciones">
                                     <ui:AddQueueItem.ItemInformation>
                                       <InArgument x:TypeArguments="x:String" x:Key="idTransaccion">[row("IdTransaccion").ToString]</InArgument>
                                       <InArgument x:TypeArguments="x:String" x:Key="monedaOrigen">[row("MonedaOrigen").ToString]</InArgument>
