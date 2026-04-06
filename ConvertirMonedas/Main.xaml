@@ -141,21 +141,13 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="552,6351" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="552,6451" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="StrUrlExchange">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">https://www.exchange-rates.org/converter</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="https://www.exchange-rates.org/converter" Name="StrUrlExchange" />
       <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="itemsList" />
       <Variable x:TypeArguments="x:String" Name="cuerpoCorreoRaw" />
       <Variable x:TypeArguments="x:String" Name="cuerpoCorreoFinal" />
-      <Variable x:TypeArguments="x:String" Name="StrCorreoUsuarios">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">biparede@pichincha.com</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="biparede@pichincha.com" Name="StrCorreoUsuarios" />
       <Variable x:TypeArguments="x:String" Name="resultado">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -487,7 +479,7 @@
         <InArgument x:TypeArguments="x:String">[cuerpoCorreoRaw.Replace("[FECHA]", Now.ToString("dd/MM/yyyy HH:mm"))]</InArgument>
       </Assign.Value>
     </Assign>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" SensitivityLabelId="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" Attachments="[{ LocalResource.FromPath(&quot;reporteFinal.xlsx&quot;) }]" AuthScopesInvalid="False" Body="[cuerpoCorreoFinal]" ConnectionId="3625b317-cb46-460e-8ec1-d278604aab98" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="524,431" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" IsDeliveryReceiptRequested="False" IsReadReceiptRequested="False" ReplyTo="[{StrCorreoUsuarios}]" Result="[resultado]" SaveAsDraft="False" Subject="[&quot;Reporte de Conversiones - David Cruz - &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[{StrCorreoUsuarios}]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" SensitivityLabelId="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" Attachments="[{ LocalResource.FromPath(&quot;reporteFinal.xlsx&quot;) }]" AuthScopesInvalid="False" Body="[cuerpoCorreoFinal]" ConnectionId="3625b317-cb46-460e-8ec1-d278604aab98" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="524,531" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" IsDeliveryReceiptRequested="False" IsReadReceiptRequested="False" ReplyTo="[{StrCorreoUsuarios}]" Result="[resultado]" SaveAsDraft="True" Subject="[&quot;Reporte de Conversiones - David Cruz - &quot; + Now.ToString(&quot;yyyy-MM-dd&quot;)]" To="[{StrCorreoUsuarios}]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentsBackup>
         <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
           <usau:BackupSlot.BackupValues>
